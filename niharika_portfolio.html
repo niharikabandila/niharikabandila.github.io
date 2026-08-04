@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandila Niharika | Programmer Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Plus+Jakarta+Sans:wght@700;800&display=swap');
+        :root { --accent: #6366f1; --bg: #000000; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: #ffffff; scroll-behavior: smooth; overflow-x: hidden; }
+        .header-font { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .bento-card {
+            background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+        .bento-card:hover {
+            border-color: var(--accent);
+            background: rgba(99, 102, 241, 0.05);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(99, 102, 241, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to bottom right, #fff 30%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow-circle {
+            position: fixed;
+            width: 600px; height: 600px;
+            background: radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%);
+            z-index: -1;
+            filter: blur(80px);
+        }
+        .cursor::after { content: "|"; animation: blink 0.8s infinite; color: var(--accent); }
+        @keyframes blink { 50% { opacity: 0; } }
+    </style>
+</head>
+<body class="selection:bg-indigo-500/30">
+
+    <div class="glow-circle top-[-200px] left-[-200px]"></div>
+    <div class="glow-circle bottom-[-200px] right-[-200px]"></div>
+
+    <!-- Nav Bar -->
+    <nav class="fixed w-full z-50 py-6 px-6">
+        <div class="max-w-5xl mx-auto bento-card px-8 py-3 flex justify-between items-center backdrop-blur-xl bg-black/40">
+            <a href="#" class="text-xl font-extrabold tracking-tighter header-font uppercase">Niharika<span class="text-indigo-500">.</span></a>
+            <div class="hidden md:flex space-x-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#experience" class="hover:text-white transition">Timeline</a>
+            </div>
+            <a href="mailto:bniharika10102@gmail.com" class="text-[10px] font-bold uppercase bg-white text-black px-4 py-2 rounded-full hover:bg-indigo-500 hover:text-white transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <div data-aos="fade-down" class="px-4 py-1 bento-card rounded-full mb-8 border-indigo-500/20">
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em] text-indigo-400">Programmer Analyst</span>
+        </div>
+        <h1 class="text-6xl md:text-[110px] font-extrabold header-font tracking-tighter leading-none mb-8 text-gradient" data-aos="zoom-in">
+            Bandila Niharika
+        </h1>
+        <p class="text-xl md:text-3xl text-gray-500 font-medium max-w-3xl mb-12" data-aos="fade-up" data-aos-delay="200">
+            Specializing in <span id="typewriter" class="text-white cursor"></span>
+        </p>
+        
+        <!-- Social Profiles (ALL 4 LINKS) -->
+        <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="400">
+            <a href="https://linkedin.com/in/niharika-bandila-4b8a83212/" target="_blank" class="bento-card px-6 py-3 flex items-center gap-3"><i class="fab fa-linkedin text-[#0077b5]"></i><span class="text-xs font-bold uppercase">LinkedIn</span></a>
+            <a href="https://github.com/niharikabandila" target="_blank" class="bento-card px-6 py-3 flex items-center gap-3"><i class="fab fa-github text-white"></i><span class="text-xs font-bold uppercase">GitHub</span></a>
+            <a href="https://leetcode.com/u/niharika_bandila/" target="_blank" class="bento-card px-6 py-3 flex items-center gap-3"><i class="fas fa-code text-[#ffa116]"></i><span class="text-xs font-bold uppercase">LeetCode</span></a>
+            <a href="https://www.geeksforgeeks.org/profile/bniharika10102" target="_blank" class="bento-card px-6 py-3 flex items-center gap-3"><i class="fas fa-terminal text-[#2f8d46]"></i><span class="text-xs font-bold uppercase">GFG Profile</span></a>
+        </div>
+    </section>
+
+    <!-- Bento About Grid -->
+    <section id="about" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-12 gap-6">
+            <div class="md:col-span-8 bento-card p-10" data-aos="fade-right">
+                <h3 class="text-indigo-500 font-bold uppercase tracking-widest text-xs mb-6">Introduction</h3>
+                <h2 class="text-4xl md:text-6xl font-bold header-font mb-6 leading-tight italic text-indigo-100">Engineering <span class="text-indigo-400">Intelligence.</span></h2>
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    I am a **Programmer Analyst** at Bilvantis Technologies, focused on building autonomous AI agents and data systems. Recognized as an **OwlCoder** for my algorithmic speed, I leverage my **RHCSA** background to build systems that are both powerful and stable.
+                </p>
+            </div>
+            <div class="md:col-span-4 bento-card p-10 flex flex-col justify-center text-center border-b-4 border-indigo-500" data-aos="fade-left">
+                <div class="text-6xl font-extrabold mb-2 tracking-tighter">300+</div>
+                <p class="text-gray-500 font-bold uppercase text-[10px] tracking-widest mb-8">DSA Problems Solved</p>
+                <div class="pt-8 border-t border-white/5">
+                    <div class="text-2xl font-bold text-indigo-400 underline italic">OwlCoder</div>
+                    <p class="text-[9px] text-gray-600 font-bold uppercase mt-1">Prestigious Merit Rank</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Systems Showcase (5 Projects) -->
+    <section id="projects" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-5xl font-bold header-font mb-20 text-center tracking-tighter" data-aos="fade-up">Featured <span class="text-indigo-500">Systems</span></h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 1. TalentIQ AI -->
+                <div class="bento-card overflow-hidden group p-8" data-aos="fade-up">
+                    <i class="fas fa-brain text-4xl text-indigo-500 mb-6 group-hover:scale-110 transition"></i>
+                    <h4 class="text-xl font-bold mb-2 uppercase">TalentIQ AI</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6">Multi-agent recruitment system using LangGraph and GPT-4o for autonomous resume matching.</p>
+                    <div class="flex gap-2"><span class="px-2 py-1 bg-white/5 text-[9px] font-bold rounded">AI AGENTS</span><span class="px-2 py-1 bg-white/5 text-[9px] font-bold rounded">PYTHON</span></div>
+                </div>
+                <!-- 2. Growstack AI -->
+                <div class="bento-card overflow-hidden group p-8" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-vial text-4xl text-green-500 mb-6 group-hover:scale-110 transition"></i>
+                    <h4 class="text-xl font-bold mb-2 uppercase text-green-500/80">Growstack AI</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6">Robust automation framework using Selenium, Java, and Playwright for UI/API validation.</p>
+                    <div class="flex gap-2"><span class="px-2 py-1 bg-white/5 text-[9px] font-bold rounded">JAVA</span><span class="px-2 py-1 bg-white/5 text-[9px] font-bold rounded">SELENIUM</span></div>
+                </div>
+                <!-- 3. Society Sphere -->
+                <div class="bento-card overflow-hidden group p-8" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-database text-4xl text-amber-500 mb-6 group-hover:scale-110 transition"></i>
+                    <h4 class="text-xl font-bold mb-2 uppercase text-amber-500/80">Society Sphere</h4>
+                    <p class="text-gray-500 text-xs leading-relaxed mb-6">Backend API infrastructure built with FastAPI and PostgreSQL for residential management.</p>
+                    <div class="flex gap-2"><span class="px-2 py-1 bg-white/5 text-[9px] font-bold rounded">FASTAPI</span><span class="px-2 py-1 bg-white/5 text-[9px] font-bold rounded">POSTGRES</span></div>
+                </div>
+                <!-- 4. Fake News -->
+                <div class="bento-card p-8 flex flex-col justify-center text-center" data-aos="fade-up">
+                    <h4 class="text-lg font-bold">Fake News Detector</h4>
+                    <p class="text-gray-500 text-[9px] uppercase font-bold mt-2 tracking-widest italic">92% ML Accuracy</p>
+                </div>
+                <!-- 5. Sensory Stick -->
+                <div class="bento-card p-8 flex flex-col justify-center text-center" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-lg font-bold">Sensory IoT Stick</h4>
+                    <p class="text-gray-500 text-[9px] uppercase font-bold mt-2 tracking-widest italic">Arduino & Cloud Integration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline & Academic Profile -->
+    <section id="experience" class="py-32 px-6 max-w-6xl mx-auto border-t border-white/5">
+        <div class="grid md:grid-cols-2 gap-20">
+            <!-- Work -->
+            <div>
+                <h3 class="text-2xl font-bold mb-12 header-font tracking-widest text-gray-500 uppercase text-xs">Timeline</h3>
+                <div class="space-y-12 border-l border-white/10 pl-8 ml-4 relative">
+                    <div class="relative" data-aos="fade-up">
+                        <div class="absolute -left-[41px] top-0 w-5 h-5 bg-indigo-500 rounded-full border-4 border-black"></div>
+                        <span class="text-indigo-400 text-[10px] font-bold uppercase tracking-widest">2024 - 2026</span>
+                        <h4 class="font-bold text-xl mt-1 uppercase">Programmer Analyst — Bilvantis</h4>
+                        <p class="text-gray-500 text-sm mt-3">Leading Agentic AI and Backend engineering efforts.</p>
+                    </div>
+                    <div class="relative" data-aos="fade-up">
+                        <div class="absolute -left-[41px] top-0 w-5 h-5 bg-gray-700 rounded-full border-4 border-black"></div>
+                        <span class="text-gray-500 text-[10px] font-bold uppercase tracking-widest">2023</span>
+                        <h4 class="font-bold text-xl mt-1 uppercase">OwlCoder Position — Technical Hub</h4>
+                        <p class="text-gray-500 text-sm mt-3">Advanced DSA & Competitive Coding mastery.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Education -->
+            <div>
+                <h3 class="text-2xl font-bold mb-12 header-font tracking-widest text-gray-500 uppercase text-xs">Education</h3>
+                <div class="space-y-6">
+                    <div class="bento-card p-6 flex justify-between items-center" data-aos="fade-up">
+                        <h4 class="font-bold">B.Tech (CSE)</h4>
+                        <p class="text-xs font-bold text-indigo-400">8.28 CGPA</p>
+                    </div>
+                    <div class="bento-card p-6 flex justify-between items-center" data-aos="fade-up" data-aos-delay="100">
+                        <h4 class="font-bold">Intermediate</h4>
+                        <p class="text-xs font-bold text-gray-400">9.54 CGPA</p>
+                    </div>
+                    <div class="bento-card p-6 flex justify-between items-center" data-aos="fade-up" data-aos-delay="200">
+                        <h4 class="font-bold">Class X</h4>
+                        <p class="text-xs font-bold text-gray-400">10.0 CGPA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials -->
+    <section id="certifications" class="py-24 px-6 max-w-6xl mx-auto border-t border-white/5 text-center">
+        <h2 class="text-gray-600 uppercase tracking-widest text-[10px] mb-12 font-bold italic">Official Credentials</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div data-aos="fade-up"><i class="fab fa-redhat text-5xl text-red-500 mb-4 transition hover:scale-110"></i><p class="text-[9px] font-bold uppercase">RHCSA Cert</p></div>
+            <div data-aos="fade-up" data-aos-delay="100"><i class="fab fa-aws text-5xl text-orange-400 mb-4 transition hover:scale-110"></i><p class="text-[9px] font-bold uppercase">AWS Cloud</p></div>
+            <div data-aos="fade-up" data-aos-delay="200"><i class="fab fa-microsoft text-5xl text-blue-400 mb-4 transition hover:scale-110"></i><p class="text-[9px] font-bold uppercase">MTA Python</p></div>
+            <div data-aos="fade-up" data-aos-delay="300"><i class="fas fa-robot text-5xl text-purple-400 mb-4 transition hover:scale-110"></i><p class="text-[9px] font-bold uppercase">Anthropic AI</p></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 text-center border-t border-white/5 px-6">
+        <div class="flex justify-center space-x-12 mb-10 text-xl text-gray-600">
+            <a href="https://linkedin.com/in/niharika-bandila-4b8a83212/" target="_blank" class="hover:text-white transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/niharikabandila" target="_blank" class="hover:text-white transition"><i class="fab fa-github"></i></a>
+            <a href="https://leetcode.com/u/niharika_bandila/" target="_blank" class="hover:text-white transition"><i class="fas fa-code"></i></a>
+            <a href="https://www.geeksforgeeks.org/profile/bniharika10102" target="_blank" class="hover:text-white transition"><i class="fas fa-terminal"></i></a>
+        </div>
+        <p class="text-[9px] text-gray-800 uppercase tracking-[0.8em] font-bold">&copy; 2026 Bandila Niharika | Programmer Analyst</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+        const words = ["Agentic Workflows.", "Data Pipelines.", "Scalable Backends.", "Intelligent Systems."];
+        let i = 0, j = 0, current = "", deleting = false;
+        const el = document.getElementById('typewriter');
+        function type() {
+            current = words[i];
+            el.textContent = deleting ? current.substring(0, j--) : current.substring(0, j++);
+            if (!deleting && j === current.length + 1) { deleting = true; setTimeout(type, 2000); }
+            else if (deleting && j === 0) { deleting = false; i = (i + 1) % words.length; setTimeout(type, 500); }
+            else { setTimeout(type, deleting ? 40 : 100); }
+        }
+        type();
+    </script>
+</body>
+</html>
