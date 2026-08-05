@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", sans-serif;
+  background: #050816;
+  color: white;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  --accent: #6c63ff;
+}
+
+.accent-text { color: var(--accent); }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at top left, rgba(59,130,246,0.15), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(168,85,247,0.15), transparent 35%),
+    #050816;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Reset SVG icon baseline issues inside buttons */
+.icon-reset {
+  display: block;
+  line-height: 0;
+}
+
+/* Prevent anchor-targeted sections from being hidden under the fixed navbar */
+:root {
+  --nav-offset: 88px;
+}
+
+section {
+  scroll-margin-top: var(--nav-offset);
+}
+
+@media (max-width: 768px) {
+  section { scroll-margin-top: 72px; }
+}
+
+/* Ensure anchor targets are offset reliably even when browsers ignore scroll-margin-top */
+section::before {
+  content: "";
+  display: block;
+  height: var(--nav-offset);
+  margin-top: calc(var(--nav-offset) * -1);
+  pointer-events: none;
+}
+
+/* Certifications icon sizing */
+.cert-icon-wrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.cert-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  line-height: 0;
+}

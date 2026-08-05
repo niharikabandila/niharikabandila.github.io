@@ -1,0 +1,135 @@
+.contact {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.contact-container {
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+
+.contact h2 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact h2 span {
+  color: var(--accent);
+}
+
+
+.contact h3 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+
+.contact p {
+  max-width: 750px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cfcfcf;
+}
+
+
+.contact-info {
+  margin-top: 40px;
+}
+
+
+.contact-info a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.contact-btn {
+  min-width: 160px;
+  height: 55px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all .25s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-4px);
+  border-color: #6c63ff;
+}
+
+
+.social-links {
+  margin-top: 45px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+
+.social-links a {
+
+  min-width: 160px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.05);
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  color: white;
+
+  font-size: 16px;
+
+  text-decoration: none;
+
+  transition: all .3s ease;
+}
+
+
+.social-links a:hover {
+
+  transform: translateY(-5px);
+
+  border-color: #6c63ff;
+
+}
+
+
+.email-text {
+
+  margin-top: 45px !important;
+
+  font-size:18px !important;
+
+  color:white !important;
+
+}
+
+@media (max-width: 768px) {
+  .contact { padding: 40px 6%; }
+  .contact h2 { font-size: 32px; }
+  .contact h3 { font-size: 18px; }
+  .contact p { font-size: 15px; max-width: 100%; }
+  .social-links a { min-width: 120px; height: 48px; font-size: 14px; }
+  .contact-info a { font-size: 16px; }
+}
