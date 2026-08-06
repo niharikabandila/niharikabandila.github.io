@@ -34,8 +34,9 @@ function Hero() {
               </a>
 
               <a
-                href="/resume.pdf"
-                download
+                href="/resume-viewer.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="secondary-btn"
               >
                 <Download size={18} />

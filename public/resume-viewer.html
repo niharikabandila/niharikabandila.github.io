@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Preview</title>
+    <style>
+      body {
+        margin: 0;
+        background: #09090b;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        padding: 18px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        background: rgba(15, 23, 42, 0.95);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      header a {
+        color: #8b5cf6;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      .pdf-frame {
+        width: 100%;
+        height: calc(100vh - 72px);
+        border: none;
+      }
+
+      .fallback {
+        padding: 32px;
+        text-align: center;
+      }
+
+      .fallback a {
+        color: #8b5cf6;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>Resume Preview</div>
+      <a href="/" target="_blank" rel="noopener noreferrer">Open site</a>
+    </header>
+    <main>
+      <iframe class="pdf-frame" src="/resume.pdf"></iframe>
+      <div class="fallback">
+        <p>If your browser cannot preview the PDF, <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">click here to open the resume directly</a>.</p>
+      </div>
+    </main>
+  </body>
+</html>
