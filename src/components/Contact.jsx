@@ -44,7 +44,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/niharika-bandila/"
+            href="https://www.linkedin.com/in/niharika-bandila-4b8a83212/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-btn"
