@@ -93,30 +93,89 @@
   border-color: #6c63ff;
 }
 
+.hero-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 380px;
+  min-width: 380px;
+}
+
 .hero-image img {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 50%;
 }
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {
+  .hero {
+    padding: 40px 6%;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .hero-image {
+    order: -1;
+    width: 260px;
+    min-width: auto;
+    margin: 0 auto 16px;
+  }
+
+  .hero-content {
+    order: 0;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+  }
+
   .hero h1 { font-size: 44px; }
-  .hero-image img { width: 300px; height: 300px; }
+  .hero h2 { font-size: 20px; }
+  .intro { font-size: 16px; }
+  .description { font-size: 15px; }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .primary-btn, .secondary-btn { width: 100%; justify-content: center; }
+
+  .hero-actions { align-items: flex-start; }
+  .hero .social-links { justify-content: flex-start; }
 }
 
 @media (max-width: 768px) {
   .hero {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
     padding: 40px 6%;
+  }
+
+  .hero-inner {
+    flex-direction: column;
+    align-items: center;
     gap: 24px;
   }
 
+  .hero-image {
+    order: -1;
+    width: 220px;
+    min-width: auto;
+    margin: 0 auto 16px;
+  }
+
   .hero-content {
+    order: 0;
+    width: 100%;
     max-width: 100%;
+    text-align: left;
   }
 
   .hero h1 { font-size: 32px; }
@@ -127,12 +186,28 @@
   .hero-buttons {
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .primary-btn, .secondary-btn { width: 100%; justify-content: center; }
 
-  .hero-image img { width: 180px; height: 180px; }
+  .hero-actions { align-items: flex-start; }
+  .hero .social-links { justify-content: flex-start; }
+}
+
+@media (max-width: 540px) {
+  .hero {
+    padding: 28px 5%;
+  }
+
+  .hero-image {
+    width: 170px;
+  }
+
+  .hero h1 { font-size: 28px; }
+  .hero h2 { font-size: 16px; }
+  .intro { font-size: 15px; }
+  .description { font-size: 14px; }
 }
 
 /* Action row: align buttons and social icons */
